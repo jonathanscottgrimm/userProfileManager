@@ -1,0 +1,14 @@
+<div class="user-list-container">
+  <div *ngFor="let user of users">
+    <a [routerLink]="['/user', user.id]"> <!-- Add this line -->
+      <mat-card class="user-card">
+        <div class="user-content">
+          <img class="user-image" [src]="user.imageUrl" alt="{{user.name}}">
+          <div class="user-info">
+            <h2>{{ user.name }}</h2>
+          </div>
+        </div>
+      </mat-card>
+    </a> <!-- And close the tag here -->
+  </div>
+</div>

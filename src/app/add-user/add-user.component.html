@@ -1,0 +1,15 @@
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  <mat-form-field>
+    <input matInput placeholder="Name" formControlName="name">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="About" formControlName="about">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Image URL" formControlName="imageUrl">
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit">Add User</button>
+</form>

@@ -1,0 +1,47 @@
+.mat-card-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 60%;
+}
+
+.mat-card-image {
+  max-width: 100%; /* Prevent it from overflowing the card boundaries */
+  height: auto;
+  max-height: 500px; /* Restrict the height as per your preference */
+}
+
+.example-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}
+
+.mat-card-image {
+  max-width: 100%; /* Prevent it from overflowing the card boundaries */
+  height: auto;
+  max-height: 600px; /* Restrict the height as per your preference */
+}
+
+mat-card {
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto; /* To center the card if it's the only or main element on the page */
+}
+
+.mat-card-title {
+  font-size: 24px; /* Adjust as needed */
+}
+
+.mat-card-subtitle {
+  font-size: 16px; /* Adjust as needed */
+  margin-top: 25px; /* Add space between subtitles if needed */
+}
+
+.mat-card-content p {
+  font-size: 28px; /* Adjust as needed */
+}
