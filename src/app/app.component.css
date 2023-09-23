@@ -1,26 +1,46 @@
-@media only screen and (max-width: 600px) {
-  nav a {
-    display: block;
-    margin-bottom: 30px;
-  }
+/* Styles for Toolbar */
+mat-toolbar-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
 }
+
 .spacer {
-  flex: 1 1 auto;
+  flex: 1;  /* This will push the navigation links to the right */
 }
 
-mat-toolbar {
-  height: 100px; /* Set your desired height */
-  line-height: 100px; /* Align content vertically */
-  font-size: 2em; /* Adjust as needed */
-  margin-bottom: 30px;
+a.mat-raised-button {
+  margin-left: 16px;
 }
 
-mat-toolbar a[mat-button] {
-  line-height: 2;
-  height: auto;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-top: auto; /* Vertically center align */
-  margin-bottom: auto; /* Vertically center align */
-  font-size: large;
+/* Styles for Card */
+mat-card {
+  max-width: 800px;
+  margin: 30px auto;  /* Center the card and give top and bottom space */
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);  /* Add a subtle shadow */
 }
+
+mat-card-header {
+  text-align: justify;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+mat-card-content {
+  text-align: center;
+  font-size: 1.6em;
+}
+/* For the toolbar title text */
+mat-toolbar span {
+    font-size: 1.5em;  /* This will make the font 50% larger than the base font size */
+}
+
+/* For the navigation links/buttons in the toolbar */
+a.mat-raised-button {
+    font-size: 1.2em;  /* Adjust as per your requirement */
+}
+
+

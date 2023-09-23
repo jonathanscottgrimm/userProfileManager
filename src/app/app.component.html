@@ -1,9 +1,19 @@
 <mat-toolbar color="primary">
-  <span>User Management Demo App</span>
-  <span class="spacer"></span>
-  <!-- This will push the navigation links to the right -->
-  <a routerLink="/users" class="mat-toolbar mat-" mat-button>User List</a>
-  <a routerLink="/add-user" class="mat-toolbar mat-raised-button" mat-button
-    >Add User</a>
+  <mat-toolbar-row>
+    <span>User Management Demo App</span>
+    <span class="spacer"></span>
+    <!-- This will push the navigation links to the right -->
+    <a routerLink="/users" class="mat-raised-button" mat-button>User List</a>
+    <a routerLink="/add-user" class="mat-raised-button" mat-button>Add User</a>
+  </mat-toolbar-row>
 </mat-toolbar>
+
+<mat-card>
+  <mat-card-header warn>Caveat Lector!</mat-card-header>
+  <mat-card-content>
+    This is very much a work in progress. Just a quickie I threw together to
+    have something in my Upwork Portfolio.
+  </mat-card-content>
+</mat-card>
+
 <router-outlet></router-outlet>
