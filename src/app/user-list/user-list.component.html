@@ -1,14 +1,22 @@
 <div class="user-list-container">
-  <div *ngFor="let user of users">
-    <a [routerLink]="['/user', user.id]"> <!-- Add this line -->
-      <mat-card class="user-card">
-        <div class="user-content">
-          <img class="user-image" [src]="user.imageUrl" alt="{{user.name}}">
-          <div class="user-info">
-            <h2>{{ user.name }}</h2>
-          </div>
+  <mat-table [dataSource]="users" class="mat-elevation-z8">
+
+    <!-- Image and Name Column -->
+    <ng-container matColumnDef="image-name">
+      <mat-header-cell *matHeaderCellDef>Users</mat-header-cell>
+      <mat-cell *matCellDef="let user">
+        <div class="image-name-container">
+          <img [src]="user.imageUrl" alt="{{ user.name }}" width="150">
+          <div class="name-container">{{ user.name }}</div>
         </div>
-      </mat-card>
-    </a> <!-- And close the tag here -->
-  </div>
+      </mat-cell>
+    </ng-container>
+
+    <!-- Define the row elements -->
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;" (click)="goToDetails(row.id)"></mat-row>
+
+  </mat-table>
 </div>
+
+

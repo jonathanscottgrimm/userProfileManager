@@ -1,10 +1,26 @@
-nav {
-  text-align: center;
-}
-
 @media only screen and (max-width: 600px) {
   nav a {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
+}
+.spacer {
+  flex: 1 1 auto;
+}
+
+mat-toolbar {
+  height: 100px; /* Set your desired height */
+  line-height: 100px; /* Align content vertically */
+  font-size: 2em; /* Adjust as needed */
+  margin-bottom: 30px;
+}
+
+mat-toolbar a[mat-button] {
+  line-height: 2;
+  height: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: auto; /* Vertically center align */
+  margin-bottom: auto; /* Vertically center align */
+  font-size: large;
 }

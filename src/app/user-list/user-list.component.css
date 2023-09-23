@@ -1,70 +1,43 @@
-/* user-list.component.css */
-
 .user-list-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;  /* This will center-align children horizontally */
-  width: 75%;
-  margin: 0 auto;  /* This will center the container itself */
+  width: 100%;
 }
 
-.user-card {
-  width: 100%;  /* Use the full width of the parent, which is .user-list-container in this case */
-  margin: 15px 0;  /* Updated margin to only apply vertically */
+mat-table {
+  width: 100%;
 }
 
-.user-content {
-  display: flex;
-  align-items: center;
+mat-header-cell, mat-cell {
+  padding: 16px;
+  text-align: left;
 }
 
-.user-image {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-right: 20px;
-}
-
-.user-info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-h2 {
-  margin: 0;
-  margin-bottom: 10px;
-}
-/* user-list.component.css */
-
-.user-card {
-  margin: 15px;
-}
-
-.user-content {
+.image-name-container {
   display: flex;
   align-items: center;
 }
 
-.user-image {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;  /* Ensures the image maintains its aspect ratio */
+.image-name-container img {
+  width: 300px;
+  height: auto;
   margin-right: 20px;
 }
 
-.user-info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+.name-container {
+  font-size: 2em;
+  color: gray;
+  font-weight: bolder;
+}
+mat-row {
+  cursor: pointer; /* Changes the cursor to a hand pointer on hover */
+  transition: background-color 0.2s; /* Smooth transition for hover effect */
 }
 
-h2 {
-  margin: 0;  /* Reset default margin */
-  margin-bottom: 10px;
+mat-row:hover {
+  background-color: rgba(0,0,0,0.05); /* A light gray background on hover */
 }
-
+mat-header-cell {
+    height: 70px;
+    line-height: 70px;
+    font-size: 3em;  /* This will make the font 50% larger than the base font size */
+    font-weight: bolder;
+}
