@@ -32,7 +32,7 @@ async fetchUsers() {
     this.users = root.data.flatMap(user => new User({
       id:  user.id,
       name:  `${user.first_name} ${user.last_name}`,
-      about: "about me here",
+      about: user.email,
       imageUrl: user.avatar
     }));
   }
