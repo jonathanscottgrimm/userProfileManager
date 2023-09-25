@@ -15,5 +15,10 @@ mat-icon {
 
 /* To make the links stand out more and look interactive */
 a[mat-button]:hover {
-  background-color: rgba(255, 255, 255, 0.1); /* This will give a slight highlight to the button when hovered */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* This will give a slight highlight to the button when hovered */
 }

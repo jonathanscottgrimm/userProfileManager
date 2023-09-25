@@ -1,13 +1,12 @@
 <div class="user-list-container">
   <mat-table [dataSource]="users" class="mat-elevation-z8">
-
     <!-- Image and Name Column with Job Title added -->
     <ng-container matColumnDef="image-name">
       <mat-cell *matCellDef="let user">
         <div class="image-name-container">
-          <img [src]="user.imageUrl" alt="{{ user.name }}" width="150">
+          <img [src]="user.imageUrl" alt="{{ user.name }}" width="150" />
           <div class="name-container">
-            {{ user.name }}<br>
+            {{ user.name }}<br />
             <span class="job-title">{{ user.jobTitle }}</span>
           </div>
         </div>
@@ -15,7 +14,9 @@
     </ng-container>
 
     <!-- Define the row elements -->
-    <mat-row *matRowDef="let row; columns: displayedColumns;" (click)="goToDetails(row.id)"></mat-row>
-
+    <mat-row
+      *matRowDef="let row; columns: displayedColumns"
+      (click)="goToDetails(row.id)"
+    ></mat-row>
   </mat-table>
 </div>
