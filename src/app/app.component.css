@@ -1,46 +1,19 @@
-/* Styles for Toolbar */
+/* Ensure the toolbar elements are vertically aligned */
 mat-toolbar-row {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 16px;
+  justify-content: space-between; /* It will ensure that there's space between the app name and the two buttons */
 }
 
 .spacer {
-  flex: 1;  /* This will push the navigation links to the right */
+  flex: 1;
 }
 
-a.mat-raised-button {
-  margin-left: 16px;
+/* Space between the icons and their respective labels */
+mat-icon {
+  margin-right: 8px;
 }
 
-/* Styles for Card */
-mat-card {
-  max-width: 800px;
-  margin: 30px auto;  /* Center the card and give top and bottom space */
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);  /* Add a subtle shadow */
+/* To make the links stand out more and look interactive */
+a[mat-button]:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* This will give a slight highlight to the button when hovered */
 }
-
-mat-card-header {
-  text-align: justify;
-  font-size: 2em;
-  font-weight: bold;
-  margin-bottom: 16px;
-}
-
-mat-card-content {
-  text-align: center;
-  font-size: 1.6em;
-}
-/* For the toolbar title text */
-mat-toolbar span {
-    font-size: 1.5em;  /* This will make the font 50% larger than the base font size */
-}
-
-/* For the navigation links/buttons in the toolbar */
-a.mat-raised-button {
-    font-size: 1.2em;  /* Adjust as per your requirement */
-}
-
-

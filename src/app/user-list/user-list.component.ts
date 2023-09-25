@@ -12,8 +12,7 @@ import { Router } from '@angular/router';
 
 export class UserListComponent implements OnInit {
   users: User[] = [];
-// Add this to the top of your component class
-displayedColumns: string[] = ['image-name'];
+  displayedColumns = ['image-name'];
 
   constructor(private http: HttpClient, private router:Router) {}
 

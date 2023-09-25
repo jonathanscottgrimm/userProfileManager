@@ -27,6 +27,11 @@ mat-header-cell, mat-cell {
   color: gray;
   font-weight: bolder;
 }
+.name-container {
+  padding-left: 10px;
+}
+
+
 mat-row {
   cursor: pointer; /* Changes the cursor to a hand pointer on hover */
   transition: background-color 0.2s; /* Smooth transition for hover effect */
@@ -40,4 +45,21 @@ mat-header-cell {
     line-height: 70px;
     font-size: 3em;  /* This will make the font 50% larger than the base font size */
     font-weight: bolder;
+}
+.image-name-container {
+  display: flex;
+  align-items: center;
+}
+
+.name-container {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.job-title {
+  font-size: 0.5em; /* Adjust the font size here */
+  color: #0b0a0a;       /* A slightly grey color for distinction */
+  margin-top: 6px;   /* Adjust spacing between name and job title here */
 }

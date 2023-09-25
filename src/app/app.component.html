@@ -1,11 +1,22 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <span>User Management Demo App</span>
+    <!-- Add icon to your application name -->
+    <span><mat-icon>people</mat-icon> User Management Demo App</span>
+
+    <!-- Spacer to push items to the right -->
     <span class="spacer"></span>
-    <!-- This will push the navigation links to the right -->
-    <a routerLink="/users" class="mat-raised-button" mat-button>User List</a>
-    <a routerLink="/add-user" class="mat-raised-button" mat-button>Add User</a>
+
+    <!-- Add icon for User List -->
+    <a routerLink="/users" mat-button>
+      <mat-icon>list</mat-icon> User List
+    </a>
+
+    <!-- Add icon for Add User -->
+    <a routerLink="/add-user" mat-button>
+      <mat-icon>person_add</mat-icon> Add User
+    </a>
   </mat-toolbar-row>
 </mat-toolbar>
 
 <router-outlet></router-outlet>
+
