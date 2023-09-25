@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { User } from '../models/user.model';
 import { IUser } from '../models/user.model.interface';
-import { randJobArea, randJobTitle, randJobDescriptor, randCompanyName, randPhoneNumber } from '@ngneat/falso';
+
 
 @Component({
   selector: 'app-user-detail',
@@ -38,6 +38,8 @@ export class UserDetailComponent implements OnInit {
       email: user.data.email,
       imageUrl: user.data.avatar
     });
+
+    console.log(this.user)
   }
 }
 

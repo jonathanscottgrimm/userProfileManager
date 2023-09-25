@@ -1,47 +1,119 @@
-.mat-card-avatar {
-  width: 64px;
-  height: 64px;
-  border-radius: 60%;
+/* Styling for mat-cards */
+.info-card {
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border: 1px solid #e0e0e0;  /* Add a light grey border */
+  display: flex;  /* Make card content horizontal */
 }
 
-.mat-card-image {
-  max-width: 100%; /* Prevent it from overflowing the card boundaries */
-  height: auto;
-  max-height: 500px; /* Restrict the height as per your preference */
+/* Larger avatar */
+.user-avatar {
+  width: 96px;
+  height: 96px;
 }
 
-.example-flex-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+/* Larger font sizes for name and job title */
+mat-card-title {
+  font-size: 2em;
 }
 
-.example-button-container {
-  display: flex;
-  justify-content: center;
-  width: 120px;
+mat-card-subtitle {
+  font-size: 1.5em;
 }
 
-.mat-card-image {
-  max-width: 100%; /* Prevent it from overflowing the card boundaries */
-  height: auto;
-  max-height: 600px; /* Restrict the height as per your preference */
+/* Ensure icons and content stretch across width */
+mat-card-content, mat-card-header {
+  width: 100%;
 }
 
+mat-icon {
+  margin-right: 8px;
+}
+  /* Global Styles for all mat-cards */
 mat-card {
-  max-width: 1200px; /* Adjust as needed */
-  margin: 0 auto; /* To center the card if it's the only or main element on the page */
+  margin: 20px 0;  /* Add some vertical spacing between cards */
 }
 
-.mat-card-title {
-  font-size: 24px; /* Adjust as needed */
+/* Styling for mat-cards */
+.info-card {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border: 1px solid #e0e0e0;
+  display: flex;
+  width: 80%;  /* Set width to 80% of parent */
+  margin: 20px auto;  /* This will center the card */
 }
 
-.mat-card-subtitle {
-  font-size: 16px; /* Adjust as needed */
-  margin-top: 25px; /* Add space between subtitles if needed */
+/* ... rest of your CSS ... */
+/* Global Styles for all mat-cards */
+mat-card {
+  margin: 20px 0;
 }
 
-.mat-card-content p {
-  font-size: 28px; /* Adjust as needed */
+/* Styling for mat-card headers */
+mat-card-header {
+  background-color: #f5f5f5;  /* Light gray background */
+  border-bottom: 1px solid #e0e0e0;  /* Bottom border */
 }
+
+mat-card-title {
+  font-size: 2.2em;
+  color: #333;  /* Darker text color */
+  font-weight: 600;  /* Bold weight */
+}
+
+mat-card-subtitle {
+  font-size: 1.6em;
+  color: #666;  /* Gray text color */
+}
+
+/* Styling for labels in mat-card content */
+mat-card-content h3,
+mat-card-content strong {
+  font-size: 1.4em;
+  color: #444;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #ddd;  /* Adds a subtle underline */
+  padding-bottom: 4px;
+}
+
+mat-card-content p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* Other provided styles */
+.info-card {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border: 1px solid #e0e0e0;
+  display: flex;
+  width: 80%;
+  margin: 20px auto;
+}
+
+mat-icon {
+  margin-right: 8px;
+}
+/* Reset padding and margin for mat-card and its elements */
+mat-card,
+mat-card-header,
+mat-card-content,
+mat-card-actions {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Re-apply some padding to mat-card-content and mat-card-actions for better spacing */
+mat-card-content,
+mat-card-actions {
+    padding: 16px;
+}
+
+/* Styling for mat-card headers */
+mat-card-header {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 16px;
+}
+
+/* ... (rest of your styles) ... */
